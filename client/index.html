@@ -1,12 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
-    <!-- <h1><a href="login.html">Login</a></h1>
-    <h1><a href="signup.html">Signup</a></h1> -->
+    <div class="hero">
+        <nav>
+            <h2 class="logo">
+                <span><i class="fa-solid fa-atom"></i>Edu</span>
+            </h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Scholarships</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Meet The Developers</a></li>
+            </ul>
+            <a href="./login.html" class="btn-login"><i class="fa-solid fa-user"></i> Login</a>
+        </nav>
+    </div>
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="./img/1.png" alt="Image #1" />
+                </li>
+                <li class="slide">
+                    <img src="./img/2.png" alt="Image #2" />
+                </li>
+                <li class="slide">
+                    <img src="./img/3.png" alt="Image #3" />
+                </li>
+                <li class="slide">
+                    <img src="./img/4.png" alt="Image #4" />
+                </li>
+                <li class="slide">
+                    <img src="./img/5.png" alt="Image #5" />
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="features-heading-text underline1 op">Our Products</h2>
+            </div>
+            <div class="features-area flex">
+                <div class="features-card flex">
+                    <img src="./img/book.png" alt="s1" id="sc-img" />
+                    <h3>Study Materials</h3>
+                    <p>
+                        Study at your own pace with the Guide Books by NCERT all at one place.
+                    </p>
+                    <a href="#" class="secondary-button lea">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./img/scholarship1.png" alt="s2" id="sc-img" />
+                    <h3>ScholarShips</h3>
+                    <p>
+                        Get To Know About Various Government ScholarShips.
+                    </p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./img/asset 14.svg" alt="s3" />
+                    <h3>Quizzes</h3>
+                    <p>
+                        Pinpoint knowledge gaps and improve understanding with
+                        personalized quiz feedback.
+                    </p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./img/asset 15.svg" alt="s4" />
+                    <h3>Videos</h3>
+                    <p>
+                        Explore key concepts through engaging, informative videos with
+                        expert instruction.
+                    </p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./img/bookd.png" alt="s5" id="sc-img" />
+                    <h3>Book Donate</h3>
+                    <p>
+                        Donate Your Books to the Needy which will help them in achieving their dreams.
+                    </p>
+                    <a href="#" class="secondary-button" style="margin-bottom: 8px;">Learn more <i
+                            class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./img/asset 16.svg" alt="s6" />
+                    <h3>Doubt Engine</h3>
+                    <p>Complex doubts made simple with our powerful doubt engine.</p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="app-info">
+                <div class="company-logo footer-logo">
+                    <a href="index.html">
+                        <img src="./assets/asset 41.png" alt="company logo" />
+                    </a>
+                </div>
+                <p>
+                    We specialize in delivering an enriching learning experience through
+                    a combination of study books, scholarships, customized quizzes,
+                    and videos to immerse learners in real-world scenarios, fostering a
+                    dynamic and engaging educational journey.
+                </p>
+            </div>
+
+            <div class="useful-links">
+                <div class="links-title">
+                    <span class="links-title-span">Useful Links</span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Study Materials</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h3>
+                Copyright &copy; 2024 HealTech Crew | All rights reserved | Developed
+                By <a href="https://github.com/anshulkansal04">HealTech Crew</a>
+            </h3>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>
