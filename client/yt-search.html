@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/yt-search.css">
+    <title>YouTube Search</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">
+                <span><i class="fa-solid fa-atom"></i>Edu</span>
+            </h2>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./scholarship.html">Scholarships</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Meet The Developers</a></li>
+            </ul>
+            <a href="./login.html" class="btn-login"><i class="fa-solid fa-user"></i> Login</a>
+        </nav>
+    </div>
+    <h1 class="yt-head flex">Video Resources</h1>
+    <div class="wrapper flex">
+        <form id="searchForm">
+            <input type="text" id="searchQuery" class="input" placeholder="Enter Your Query">
+            <button type="submit" class="sbt">Search</button>
+        </form>
+    </div>
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var query = document.getElementById('searchQuery').value;
+            searchYouTube(query);
+        });
+
+        function searchYouTube(query) {
+            var apiKey = 'AIzaSyCc_sJxkrdB7l3-cd2RiWYOLx-UncJcwlk';
+            var url = 'https://www.googleapis.com/youtube/v3/search?key=' + apiKey + '&part=snippet&type=video&q=' + encodeURIComponent(query);
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    displayResults(data.items);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function displayResults(videos) {
+            var resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+
+            videos.forEach(function (video) {
+                var videoId = video.id.videoId;
+                var title = video.snippet.title;
+                var thumbnailUrl = video.snippet.thumbnails.default.url;
+
+                var videoElement = document.createElement('div');
+                videoElement.innerHTML = '<div class="video-container">' +
+                    '<iframe width="400" height="800" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>' +
+                    '<div class="video-description"><h2>' + title + '</h2></div>' +
+                    '</div>';
+
+                resultsContainer.appendChild(videoElement);
+            });
+        }
+    </script>
+</body>
+
+</html>
