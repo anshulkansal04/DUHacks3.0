@@ -1,0 +1,339 @@
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+    :root {
+        --transition-time: 2.3s;
+    }
+
+
+    body {
+        font-family: 'Oswald', sans-serif;
+        background-color: #212121;
+    }
+
+    /* Heading */
+    #st-header {
+        background-image: url('../img/b19.jpg');
+        height: 300px;
+        margin: 30px 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .heading h1 {
+        top: 100px;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 800;
+        color: #8ecae6;
+    }
+
+    .underline1 {
+        position: relative;
+    }
+
+    .underline1:before {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 10%;
+        font-weight: 400;
+        width: 80%;
+        border-bottom: 1px solid #219ebc;
+    }
+
+    /* Card Css */
+    .row {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .flexx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        position: relative;
+        height: 400px;
+        width: 30%;
+        margin: 10px 30px;
+        transition: ease all var(--transition-time);
+        perspective: 1200px;
+
+        &:hover {
+            .cover {
+                transform: rotateX(0deg) rotateY(-180deg);
+
+                &:before {
+                    transform: translateZ(30px);
+                }
+
+                &:after {
+                    background-color: black;
+                }
+
+                h1 {
+                    transform: translateZ(100px);
+                }
+
+                .price {
+                    transform: translateZ(60px);
+                }
+
+                a {
+                    transform: translateZ(-60px) rotatey(-180deg);
+                }
+            }
+        }
+
+        .cover {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform-style: preserve-3d;
+            transition: ease all var(--transition-time);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            &:before {
+                content: '';
+                position: absolute;
+                border: 5px solid rgba(255, 255, 255, .5);
+                box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                z-index: 2;
+                transition: ease all var(--transition-time);
+                transform-style: preserve-3d;
+                transform: translateZ(0px);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                z-index: 2;
+                transition: ease all 1.3s;
+                background: rgba(0, 0, 0, .4);
+            }
+
+            &.item-a {
+                background-image: url('../img/teacher-monochromatic.svg');
+                background-size: 100% 100%;
+                /* Cover the entire width and height of the div */
+                background-position: center;
+                width: 100%;
+            }
+
+            &.item-b {
+                background-image: url('../img/book-lover-monochromatic.svg');
+                background-size: 100% 100%;
+                background-position: center;
+                width: 100%;
+                background-repeat: no-repeat;
+            }
+
+            &.item-c {
+                background-image: url('../img/rocket-boy-two-color.svg');
+            }
+
+            &.item-d {
+                background-image: url('../img/science-discovery-two-color.svg');
+                background-size: 100% 100%;
+                background-position: center;
+                width: 100%;
+                background-repeat: no-repeat;
+            }
+
+            &.item-e {
+                background-image: url('../img/graduation-outline.png');
+            }
+
+            h1 {
+                font-weight: 600;
+                position: absolute;
+                bottom: 45%;
+                left: 30%;
+                color: white;
+                transform-style: preserve-3d;
+                transition: ease all var(--transition-time);
+                z-index: 3;
+                font-size: 3em;
+                transform: translateZ(0px);
+            }
+        }
+
+        .card-back {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #0b0f08;
+            transform-style: preserve-3d;
+            transition: ease all var(--transition-time);
+            transform: translateZ(-1px);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            a {
+                transform-style: preserve-3d;
+                transition: ease transform var(--transition-time), ease background .5s;
+                transform: translateZ(-1px) rotatey(-180deg);
+                background: transparent;
+                border: 1px solid white;
+                font-weight: 200;
+                font-size: 1.3em;
+                color: white;
+                margin: 5px;
+                padding: 14px 25px;
+                outline: none;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: white;
+                    color: #0b0f08;
+                }
+            }
+        }
+    }
+
+    /* Footer CSS */
+    .footer {
+        height: auto;
+        padding-top: 20px;
+        background-color: #ebf2fa;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .app-logo {
+        margin-left: 50px;
+        padding-left: 50px;
+        width: 300px;
+    }
+
+    .app-info {
+        margin-right: 10px;
+        padding-left: 100px;
+        width: 1000px;
+
+    }
+
+    .footer-logo img {
+        height: 61px;
+        width: 270px;
+        border-left: 6px solid #2d4bf0;
+        padding-left: 10px;
+        padding-right: 15px;
+        border-right: 6px solid #2d4bf0;
+    }
+
+    .app-info p {
+        padding-bottom: 30px;
+        color: ffffff;
+        font-family: sans-serif;
+        padding-left: 20px;
+
+    }
+
+    .useful-links {
+        margin: 60px;
+        width: 500px;
+        text-decoration: underline;
+        padding-right: 30px;
+    }
+
+    .useful-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10px;
+    }
+
+    .links-title {
+        font-size: 1.40rem;
+
+        line-height: 1.30rem;
+        color: rgb(33, 28, 28);
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .links-title-span {
+        font-size: 30px;
+        font-family: sans-serif;
+        padding-left: 10px;
+        border-left: 6px solid #2d4bf0;
+        padding-right: 10px;
+        border-right: 6px solid #2d4bf0;
+
+    }
+
+    .useful-links ul li {
+        font-size: 18px;
+        padding: 3px;
+        font-family: sans-serif;
+        color: ffffff;
+    }
+
+    .useful-links ul li a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .useful-links ul li a:hover {
+        color: #111;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+
+    .footer-logo {
+        font-size: 2.1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+
+    .copyright {
+        background-color: #d6d9fd;
+        padding: 18px;
+        text-align: center;
+    }
+
+    .copyright h3 {
+        font-size: 20px;
+        font-family: sans-serif;
+        color: rgb(33, 28, 28);
+    }
+
+    .copyright h3 a {
+        color: rgb(34, 91, 184);
+    }
+
+    .copyright h3 a:hover {
+
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
