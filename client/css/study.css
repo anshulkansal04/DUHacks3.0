@@ -20,11 +20,6 @@
         background-repeat: no-repeat;
     }
 
-    /* .heading{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
     .heading h1 {
         top: 100px;
         text-align: center;

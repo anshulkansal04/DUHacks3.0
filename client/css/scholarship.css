@@ -4,13 +4,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
 #st-header {
     background-image: url('../img/scholarship.png');
     height: 400px;
@@ -86,18 +79,20 @@
     height: 100%;
 }
 
-.card-desc h3{
+.card-desc h3 {
     margin: 5px;
     margin-bottom: 10px;
 }
 
-.card-desc ul{
+.card-desc ul {
     margin: 0 30px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.card a{
+
+.card a {
     text-decoration: none;
     color: rgb(255, 217, 0);
 }

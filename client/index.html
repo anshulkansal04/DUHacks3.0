@@ -1,258 +1,289 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Learn Hub</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;&family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=League+Spartan&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="hero">
-        <nav>
-            <h2 class="logo">
-                <span>
-                    <img src="./img/logo.png" alt=""> LearnHub</span>
-            </h2>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./developers.html">About Us</a></li>
-                <li><a href="./scholarship.html">Scholarships</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Contact Us</a>
-                    <div class="dropdown-content">
-                        <p>Phone: <br>+91 9996103246</p>
-                        <p>Email: learnhub@gmail.com</p>
-                        <p>Address: Jaypee Institute Of Information Tecgnology,Noida,Uttar Pradesh</p>
-                    </div>
-                </li>
-            </ul>
-            <a href="./login.html" class="btn-login"><i class="fa-solid fa-user"></i> Login</a>
-        </nav>
-    </div>
-    <section aria-label="Newest Photos">
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-button next" data-carousel-button="next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="./img/1.png" alt="Image #1" />
-                </li>
-                <li class="slide">
-                    <img src="./img/2.png" alt="Image #2" />
-                </li>
-                <li class="slide">
-                    <img src="./img/3.png" alt="Image #3" />
-                </li>
-                <li class="slide">
-                    <img src="./img/4.png" alt="Image #4" />
-                </li>
-                <li class="slide">
-                    <img src="./img/5.png" alt="Image #5" />
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="features-section" id="features">
-        <div class="container">
-            <div class="features-header">
-                <h2 class="features-heading-text underline1 op">Our Products</h2>
-            </div>
-            <div class="features-area flex">
-                <div class="features-card flex">
-                    <img src="./img/book.png" alt="s1" id="sc-img" />
-                    <h3>Study Materials</h3>
-                    <p>
-                        Study at your own pace with the Guide Books by NCERT all at one place.
-                    </p>
-                    <a href="./study.html" class="secondary-button lea">Learn More <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./img/scholarship1.png" alt="s2" id="sc-img" />
-                    <h3>ScholarShips</h3>
-                    <p>
-                        Get To Know About Various Government ScholarShips.
-                    </p>
-                    <a href="./scholarship.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./img/asset 14.svg" alt="s3" />
-                    <h3>Quizzes</h3>
-                    <p>
-                        Pinpoint knowledge gaps and improve understanding with
-                        personalized quiz feedback.
-                    </p>
-                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./img/asset 15.svg" alt="s4" />
-                    <h3>Videos</h3>
-                    <p>
-                        Explore key concepts through engaging, informative videos with
-                        expert instruction.
-                    </p>
-                    <a href="./yt-search.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./img/bookd.png" alt="s5" id="sc-img" />
-                    <h3>Book Donate</h3>
-                    <p>
-                        Donate Your Books to the Needy which will help them in achieving their dreams.
-                    </p>
-                    <a href="./donate.html" class="secondary-button" style="margin-bottom: 8px;">Learn more <i
-                            class="fa-solid fa-right-long"></i></a>
-                </div>
-                <div class="features-card flex">
-                    <img src="./img/asset 16.svg" alt="s6" />
-                    <h3>Doubt Engine</h3>
-                    <p>Complex doubts made simple with our powerful doubt engine.</p>
-                    <a href="./doubt.html" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="features-header">
-        <h2 class="features-heading-text underline1 op">Time Line For Exams</h2>
-    </div>
-    <section class="timeline">
+      <nav>
+        <h2 class="logo">
+          <span> <img src="./img/logo.png" alt="" /> LearnHub</span>
+        </h2>
         <ul>
-          <li>
-            <div>
-              <date>January 2024</date>
-              <div class="exam">
-                <h1>Exam Name</h1>
-                <p>NLSTSE</p>
-              </div>
-              <div class="detail">
-                <h1>Details</h1>
-                <span
-                  ><a href="https://www.unifiedcouncil.com/about-nstse.html"
-                    >Link</a
-                  ></span
-                >
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <date>April 2024</date>
-              <div class="exam">
-                <h1>Exam Name</h1>
-                <p>ZIO</p>
-              </div>
-              <div class="detail">
-                <h1>Details</h1>
-                <span><a href="https://www.iarcs.org.in/">Link</a></span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <date>August 2024</date>
-              <div class="exam">
-                <h1>Exam Name</h1>
-                <p>PRMO</p>
-              </div>
-              <div class="detail">
-                <h1>Details</h1>
-                <span
-                  ><a
-                    href="https://olympiads.hbcse.tifr.res.in/mathematical/prmo/"
-                    >Link</a
-                  ></span
-                >
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <date>November 2024</date>
-              <div class="exam">
-                <h1>Exam Name</h1>
-                <p>NSEJS</p>
-              </div>
-              <div class="detail">
-                <h1>Details</h1>
-                <span
-                  ><a
-                    href="https://iapt.org.in/88-activities/2432-schedule-for-nses-inos-ios.html"
-                    >Link</a
-                  ></span
-                >
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <date>December 2024</date>
-              <div class="exam">
-                <h1>Exam Name</h1>
-                <p>NTSE</p>
-              </div>
-              <div class="detail">
-                <h1>Details</h1>
-                <span
-                  ><a href="https://ntsescholars.com/ntse_official_link.php"
-                    >Link</a
-                  ></span
-                >
-              </div>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./developers.html">About Us</a></li>
+          <li><a href="./scholarship.html">Scholarships</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Contact Us</a>
+            <div class="dropdown-content">
+              <p>Phone: <br />+91 9996103246</p>
+              <p>Email: learnhub@gmail.com</p>
+              <p>
+                Address: Jaypee Institute Of Information Tecgnology,Noida,Uttar
+                Pradesh
+              </p>
             </div>
           </li>
         </ul>
-      </section>
+        <a href="./login.html" class="btn-login"
+          ><i class="fa-solid fa-user"></i> Login</a
+        >
+      </nav>
+    </div>
+    <section aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="./img/1.png" alt="Image #1" />
+          </li>
+          <li class="slide">
+            <img src="./img/2.png" alt="Image #2" />
+          </li>
+          <li class="slide">
+            <img src="./img/3.png" alt="Image #3" />
+          </li>
+          <li class="slide">
+            <img src="./img/4.png" alt="Image #4" />
+          </li>
+          <li class="slide">
+            <img src="./img/5.png" alt="Image #5" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="features-header">
+          <h2 class="features-heading-text underline1 op">Our Products</h2>
+        </div>
+        <div class="features-area flex">
+          <div class="features-card flex">
+            <img src="./img/book.png" alt="s1" id="sc-img" />
+            <h3>Study Materials</h3>
+            <p>
+              Study at your own pace with the Guide Books by NCERT all at one
+              place.
+            </p>
+            <a href="./study.html" class="secondary-button lea"
+              >Learn More <i class="fa-solid fa-right-long"></i
+            ></a>
+          </div>
+          <div class="features-card flex">
+            <img src="./img/scholarship1.png" alt="s2" id="sc-img" />
+            <h3>ScholarShips</h3>
+            <p>Get To Know About Various Government ScholarShips.</p>
+            <a href="./scholarship.html" class="secondary-button"
+              >Learn more <i class="fa-solid fa-right-long"></i
+            ></a>
+          </div>
+          <div class="features-card flex">
+            <img src="./img/asset 14.svg" alt="s3" />
+            <h3>Quizzes</h3>
+            <p>
+              Pinpoint knowledge gaps and improve understanding with
+              personalized quiz feedback.
+            </p>
+            <a href="#" class="secondary-button"
+              >Learn more <i class="fa-solid fa-right-long"></i
+            ></a>
+          </div>
+          <div class="features-card flex">
+            <img src="./img/asset 15.svg" alt="s4" />
+            <h3>Videos</h3>
+            <p>
+              Explore key concepts through engaging, informative videos with
+              expert instruction.
+            </p>
+            <a href="./yt-search.html" class="secondary-button"
+              >Learn more <i class="fa-solid fa-right-long"></i
+            ></a>
+          </div>
+          <div class="features-card flex">
+            <img src="./img/bookd.png" alt="s5" id="sc-img" />
+            <h3>Book Donate</h3>
+            <p>
+              Donate Your Books to the Needy which will help them in achieving
+              their dreams.
+            </p>
+            <a
+              href="./donate.html"
+              class="secondary-button"
+              style="margin-bottom: 8px"
+              >Learn more <i class="fa-solid fa-right-long"></i
+            ></a>
+          </div>
+          <div class="features-card flex">
+            <img src="./img/asset 16.svg" alt="s6" />
+            <h3>Doubt Engine</h3>
+            <p>Complex doubts made simple with our powerful doubt engine.</p>
+            <a href="./bot.html" class="secondary-button"
+              >Learn more <i class="fa-solid fa-right-long"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="features-header">
+      <h2 class="features-heading-text underline1 op">Time Line For Exams</h2>
+    </div>
+    <section class="timeline">
+      <ul>
+        <li>
+          <div>
+            <date>January 2024</date>
+            <div class="exam">
+              <h1>Exam Name</h1>
+              <p>NLSTSE</p>
+            </div>
+            <div class="detail">
+              <h1>Details</h1>
+              <span
+                ><a href="https://www.unifiedcouncil.com/about-nstse.html"
+                  >Link</a
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <date>April 2024</date>
+            <div class="exam">
+              <h1>Exam Name</h1>
+              <p>ZIO</p>
+            </div>
+            <div class="detail">
+              <h1>Details</h1>
+              <span><a href="https://www.iarcs.org.in/">Link</a></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <date>August 2024</date>
+            <div class="exam">
+              <h1>Exam Name</h1>
+              <p>PRMO</p>
+            </div>
+            <div class="detail">
+              <h1>Details</h1>
+              <span
+                ><a
+                  href="https://olympiads.hbcse.tifr.res.in/mathematical/prmo/"
+                  >Link</a
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <date>November 2024</date>
+            <div class="exam">
+              <h1>Exam Name</h1>
+              <p>NSEJS</p>
+            </div>
+            <div class="detail">
+              <h1>Details</h1>
+              <span
+                ><a
+                  href="https://iapt.org.in/88-activities/2432-schedule-for-nses-inos-ios.html"
+                  >Link</a
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <date>December 2024</date>
+            <div class="exam">
+              <h1>Exam Name</h1>
+              <p>NTSE</p>
+            </div>
+            <div class="detail">
+              <h1>Details</h1>
+              <span
+                ><a href="https://ntsescholars.com/ntse_official_link.php"
+                  >Link</a
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="app-info">
-                <div class="company-logo footer-logo">
-                    <a href="index.html">
-                        <img src="./img/logo.png" alt="company logo" />
-                    </a>
-                </div>
-                <p>
-                    We specialize in delivering an enriching learning experience through
-                    a combination of study books, scholarships, customized quizzes,
-                    and videos to immerse learners in real-world scenarios, fostering a
-                    dynamic and engaging educational journey.
-                </p>
-            </div>
+      <div class="footer-content">
+        <div class="app-info">
+          <div class="company-logo footer-logo">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="company logo" />
+            </a>
+          </div>
+          <p>
+            We specialize in delivering an enriching learning experience through
+            a combination of study books, scholarships, customized quizzes, and
+            videos to immerse learners in real-world scenarios, fostering a
+            dynamic and engaging educational journey.
+          </p>
+        </div>
 
-            <div class="useful-links">
-                <div class="links-title">
-                    <span class="links-title-span">Useful Links</span>
-                </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./study.html">Study Materials</a></li>
-                    <li><a href="./scholarship.html">Scholarships</a></li>
-                    <li><a href="./developers.html">About Us</a></li>
-                    <li><a href="./doubt.html">Doubt Engine</a></li>
-                    <li><a href="./yt-search.html">Videos</a></li>
-                </ul>
-            </div>
+        <div class="useful-links">
+          <div class="links-title">
+            <span class="links-title-span">Useful Links</span>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./study.html">Study Materials</a></li>
+            <li><a href="./scholarship.html">Scholarships</a></li>
+            <li><a href="./developers.html">About Us</a></li>
+            <li><a href="./doubt.html">Doubt Engine</a></li>
+            <li><a href="./yt-search.html">Videos</a></li>
+          </ul>
         </div>
-        <div class="copyright">
-            <h3>
-                Copyright &copy; 2024 HealTech Crew | All rights reserved | Developed
-                By <a href="https://github.com/anshulkansal04">HealTech Crew</a>
-            </h3>
-        </div>
+      </div>
+      <div class="copyright">
+        <h3>
+          Copyright &copy; 2024 HealTech Crew | All rights reserved | Developed
+          By <a href="https://github.com/anshulkansal04">HealTech Crew</a>
+        </h3>
+      </div>
     </footer>
     <script src="./script.js"></script>
     <script src="./timeline.js"></script>
-</body>
-
+  </body>
 </html>
