@@ -1,129 +1,138 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Chatbot in JavaScript | CodingNepal</title>
-    <link rel="stylesheet" href="./css/bot.css">
-    <link rel="stylesheet" href="./css/doubt.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="./css/bot.css" />
+    <link rel="stylesheet" href="./css/doubt.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts Link For Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
     <script src="./bot.js" defer></script>
 
     <style>
       .m-0 {
-          margin: 0;
+        margin: 0;
       }
-  
+
       .p-0 {
-          padding: 0;
+        padding: 0;
       }
-  
+
       .box-border {
-          box-sizing: border-box;
+        box-sizing: border-box;
       }
-  
+
       .font-poppins {
-          font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
-  
+
       .scroll-smooth {
-          scroll-behavior: smooth;
+        scroll-behavior: smooth;
       }
-  
+
       .text-primary_text_color {
-          color: #183b56;
+        color: #183b56;
       }
-  
+
       .overflow-x-hidden {
-          overflow-x: hidden;
+        overflow-x: hidden;
       }
-  
+
       /* Header Section */
       .header {
-          text-align: center;
+        text-align: center;
       }
-  
+
       .header .head-txt {
-          font-size: 2rem;
-          font-weight: bold;
-          margin-top: 4vh;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 4vh;
       }
-  
+
       .header .head-img {
-          width: 80vw;
-          max-width: 30vw;
-          margin: auto;
-          margin-top: 7vh;
+        width: 80vw;
+        max-width: 30vw;
+        margin: auto;
+        margin-top: 7vh;
       }
-  
+
       .text-center {
-          text-align: center;
+        text-align: center;
       }
-  
+
       .my-0 {
-          margin-top: 0;
-          margin-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
       }
-  
+
       .para-1,
       .para-2 {
-          font-family: 'Roboto', sans-serif;
-          font-size: 1rem;
-          line-height: 1.8rem;
-          margin-top: 3vh;
-          margin-bottom: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin-top: 3vh;
+        margin-bottom: 0;
       }
-  
+
       /* Footer Section */
       footer {
-          height: auto;
-          width: 100%;
-          background-color: #ebf2fa;
-          margin-top: 5vh;
-          padding-top: 10px;
-          bottom: 0;
-          left: 0;
-          right: 0;
+        height: auto;
+        width: 100%;
+        background-color: #ebf2fa;
+        margin-top: 5vh;
+        padding-top: 10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
       }
-  
-      .footer-content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-  
-      .company-logo {
-          display: inline-block;
-          width: 200px;
-          font-size: 2.1rem;
-          font-weight: medium;
-          text-transform: capitalize;
-          line-height: 3rem;
-      }
-  
-      .footer-logo img {
-          width: 100%;
-      }
-  
-      .text-author_color {
-          color: #cacdd2;
-      }
-  </style>
 
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .company-logo {
+        display: inline-block;
+        width: 200px;
+        font-size: 2.1rem;
+        font-weight: medium;
+        text-transform: capitalize;
+        line-height: 3rem;
+      }
+
+      .footer-logo img {
+        width: 100%;
+      }
+
+      .text-author_color {
+        color: #cacdd2;
+      }
+    </style>
   </head>
   <body class="text-primary_text_color overflow-x-hidden font-poppins">
-
-    <!-- header section -->
     <header>
-        <div class="header">
-            <h1 class="text-[2rem] font-bold text-center mt-[4vh] md:text-[2rem] lg:text-5xl head-txt">Doubt Engine</h1>
-            <img src="./img/asset 42.svg" alt="Doubt Engine"
-                class="block md:w-[30vw] mx-auto mt-[7vh] w-[80vw] head-img">
-        </div>
+      <div class="header">
+        <h1
+          class="text-[2rem] font-bold text-center mt-[4vh] md:text-[2rem] lg:text-5xl head-txt"
+        >
+          Doubt Engine
+        </h1>
+        <img
+          src="./img/asset 42.svg"
+          alt="Doubt Engine"
+          class="block md:w-[30vw] mx-auto mt-[7vh] w-[80vw] head-img"
+        />
+      </div>
     </header>
 
     <button class="chatbot-toggler">
@@ -138,14 +147,17 @@
       <ul class="chatbox">
         <li class="chat incoming">
           <span class="material-symbols-outlined">smart_toy</span>
-          <p>Hi there 👋<br>How can I help you today?</p>
+          <p>Hi there 👋<br />How can I help you today?</p>
         </li>
       </ul>
       <div class="chat-input">
-        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <textarea
+          placeholder="Enter a message..."
+          spellcheck="false"
+          required
+        ></textarea>
         <span id="send-btn" class="material-symbols-rounded">send</span>
       </div>
     </div>
-
   </body>
 </html>
