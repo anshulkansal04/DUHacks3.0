@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/donate.css">
+    <title>Donate Book</title>
+</head>
+<body>
+    <form action="/donate" method="post">
+        <h1 class="section-p1 color-h" >Donate Book</h1>
+        <div class="container flex">
+            <div class="professional">
+                <h2 class="color-h">Information</h2>
+                
+                <div class="name">
+                    <label for="Fname">Full Name:</label>
+                    <input type="text" id="Fname" name="Fname" required>
+                </div>
+                
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="phone_number">
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="number" id="phone_number" name="phone_number" required>
+                </div>
+                
+                <div class="title_book">
+                    <label for="title_book">Title of Book:</label>
+                    <input type="text" id="title_book" name="title_book" required>
+                </div>
+                
+                <div class="book_author">
+                    <label for="book_author">Author of Book:</label>
+                    <input type="text" id="book_author" name="book_author" required>
+                </div>
+                
+                <div class="quantity_book">
+                    <label for="quantity_book">Quantity of Book:</label>
+                    <input type="number" id="quantity_book" name="quantity_book" >
+                </div>
+                
+                <div class="genre">
+                    <label for="categories">Genre:</label>
+                    <select id="categories" name="categories">
+                        <option>(Select any one)</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Non-Fiction">Non-Fiction</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Science">Science</option>
+                        <option value="Business">Business</option>
+                        <option value="Art">Art</option>
+                        <option value="Religion">Religion</option>
+                        <option value="Poetry">Poetry</option>
+                    </select>
+                </div>
+
+                <div class="section">
+                    <label for="product-description">Book Descriptions:</label>
+                    <textarea id="product-description" name="product_description" rows="4" required></textarea>
+                </div>
+           
+            </div>
+        </div>
+        <button type="submit" align="center" class="button section-m2" name="submit" >Submit</button>
+    </form>
+</body>
+</html>
