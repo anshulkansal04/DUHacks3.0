@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #d9dcea;
+}
+
+.color-h{
+    color:#088178;
+    text-align: center;
+}
+.container {
+    display: flex;
+    width: 50%;
+    margin-left:25%;
+    height: 90vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2, 5em;
+    color: #088178;
+    margin-bottom: 20px;
+}
+
+.professional {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #f7f0f0;
+    border-radius: 15px;
+    background: #f3efef;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+/* .professional:hover {
+    /* transform: scale(1.05); */
+ */
+
+.section {
+    margin-bottom: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 99%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.button {
+    padding: 1.5em 2.5em;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    transition: all 0.3s ease;
+    font-size: 13px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.4);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.button:hover::before {
+    width: 200%;
+}
+
+.footer-col{
+    background-color: white;
+}
+
+.section-m2{
+    left: 45%;
+    margin: 10px 0;
+}

@@ -11,7 +11,7 @@ const db = new pg.Client({
     user: "postgres" ,
     host: "localhost",
     database: "Education",
-    password: "anshul",
+    password: "vishwas",
     port: 5432,
 });
 
@@ -30,6 +30,10 @@ app.get("/login", (req, res) => {
 
 app.get("/signup", (req, res) => {
     res.sendFile(__dirname + "/client/signup.html");
+});
+
+app.get("/donate", (req, res) => {
+    res.sendFile(__dirname + "/client/donate.html");
 });
 
 app.post("/signup", async (req, res) => {
@@ -87,6 +91,27 @@ app.post("/login", async (req, res) => {
       }
       console.log(Password, Email);
     });
+
+    app.post("/donate" , async (req , res)=>{
+        const fname = req.body.Fname;
+        const email = req.body.email;
+        const phone = req.body.phone_number;
+        const title = req.body.title_book;
+        const author = req.body.book_author;
+        const quantity = req.body.quantity_book;
+        const genre = req.body.categories;
+        const description = req.body.product_description;
+        const result = await db.query(
+            "INSERT INTO donate (full_name , email , phone , title , author , quantity , genre , description) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)" , 
+            [fname , email , phone , title , author , quantity , genre , description]
+        );
+        console.log(result);
+        console.log(fname , email , phone , title , author , quantity , genre , description);
+        res.send("Data saved successfully");
+    
+    })
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on PORT ${PORT}`);
 });
