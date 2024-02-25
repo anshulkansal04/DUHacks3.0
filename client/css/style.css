@@ -206,6 +206,31 @@ nav ul li a:hover {
     transition: .3s;
 }
 
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    z-index: 345;
+}
+
+.dropdown p{
+    color: rgb(48, 45, 45);
+    padding: 10px 10px;
+    margin: 10px;
+}
+.dropdown-content {
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 /* Login Button  */
 .btn-login {
     border: none;
